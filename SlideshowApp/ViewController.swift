@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     // outletの接続
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var playImage: UIButton!
+    @IBOutlet weak var nextImage: UIButton!
+    @IBOutlet weak var previousImage: UIButton!
     
     // 配列に指定するindex番号
     var nowIndex: Int = 0
@@ -22,6 +24,7 @@ class ViewController: UIViewController {
     // スライドショーの画像配列
     let imageArray = [UIImage(named: "Xcode"), UIImage(named: "VScode"), UIImage(named: "anaconda")]
     
+    // デフォルトの表示
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -45,14 +48,22 @@ class ViewController: UIViewController {
         }
         image.image = imageArray[nowIndex]
     }
-    
+
+
     // 自動で次の画像を読み込む
-    @IBAction func playImage(_ sender: Any) {
+    @IBAction func playImage(_ sender: UIButton) {
+        
         if self.timer == nil {
             self.timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(onTimer(_ :)), userInfo: nil, repeats: true)
+            sender.setTitle("停止", for: .normal)
+            nextImage.isEnabled = false
+            previousImage.isEnabled = false
         } else {
             self.timer.invalidate()
             self.timer = nil
+            sender.setTitle("再生", for: .normal)
+            nextImage.isEnabled = true
+            previousImage.isEnabled = true
         }
         
     }
@@ -67,11 +78,18 @@ class ViewController: UIViewController {
     
     // 遷移先から戻るSegue
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
+        self.timer = nil
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let resultViewController:ResultViewController = segue.destination as! ResultViewController
         resultViewController.x = nowIndex
+        if self.timer != nil {
+            self.timer.invalidate()
+        }
+        playImage.setTitle("再生", for: .normal)
+        nextImage.isEnabled = true
+        previousImage.isEnabled = true
     }
 
     

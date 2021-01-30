@@ -14,6 +14,9 @@
 		770D1D1125B30CC100029159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 770D1D1025B30CC100029159 /* Assets.xcassets */; };
 		770D1D1425B30CC100029159 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 770D1D1225B30CC100029159 /* LaunchScreen.storyboard */; };
 		770D1D1D25B3126800029159 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770D1D1C25B3126800029159 /* ResultViewController.swift */; };
+		77486CD625C5565A00435DB5 /* anaconda.png in Resources */ = {isa = PBXBuildFile; fileRef = 77486CD325C5565A00435DB5 /* anaconda.png */; };
+		77486CD725C5565A00435DB5 /* VScode.png in Resources */ = {isa = PBXBuildFile; fileRef = 77486CD425C5565A00435DB5 /* VScode.png */; };
+		77486CD825C5565A00435DB5 /* Xcode.png in Resources */ = {isa = PBXBuildFile; fileRef = 77486CD525C5565A00435DB5 /* Xcode.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		770D1D1325B30CC100029159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		770D1D1525B30CC100029159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		770D1D1C25B3126800029159 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		77486CD325C5565A00435DB5 /* anaconda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anaconda.png; sourceTree = "<group>"; };
+		77486CD425C5565A00435DB5 /* VScode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VScode.png; sourceTree = "<group>"; };
+		77486CD525C5565A00435DB5 /* Xcode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Xcode.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,9 @@
 				770D1D1C25B3126800029159 /* ResultViewController.swift */,
 				770D1D0D25B30CBC00029159 /* Main.storyboard */,
 				770D1D1025B30CC100029159 /* Assets.xcassets */,
+				77486CD325C5565A00435DB5 /* anaconda.png */,
+				77486CD425C5565A00435DB5 /* VScode.png */,
+				77486CD525C5565A00435DB5 /* Xcode.png */,
 				770D1D1225B30CC100029159 /* LaunchScreen.storyboard */,
 				770D1D1525B30CC100029159 /* Info.plist */,
 			);
@@ -127,7 +136,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77486CD625C5565A00435DB5 /* anaconda.png in Resources */,
+				77486CD825C5565A00435DB5 /* Xcode.png in Resources */,
 				770D1D1425B30CC100029159 /* LaunchScreen.storyboard in Resources */,
+				77486CD725C5565A00435DB5 /* VScode.png in Resources */,
 				770D1D1125B30CC100029159 /* Assets.xcassets in Resources */,
 				770D1D0F25B30CBC00029159 /* Main.storyboard in Resources */,
 			);
